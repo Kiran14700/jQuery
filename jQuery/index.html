@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    this is my body
+    <p>This jQuery</p>
+    <h1 id="second">Hide me 1</h1>
+    <h1>Hide me 2</h1>
+    <h1 class="odd">Hide me 3</h1>
+    <h1 class="odd">Hide me 4</h1>
+    <h2 class="dbl">checking double click</h3>
+    <h2 class="hove">checking hover click</h2>
+    <h3>checking some other methods</h3>
+    <button class="toggle">toggle</button>
+<div id="wiki" class="Checking">
+    The complex's tower on Lafayette Avenue
+    The American Bank Note Company Printing Plant is a repurposed complex 
+    of three interconnected buildings in the Hunts Point neighborhood of 
+    the Bronx in New York City. The innovative Kirby, Petit & Green design 
+    was built in 1909–1911 by the American Bank Note Company on land which
+     had previously been part of Edward G. Faile's country estate. A wide 
+     variety of financial instruments were printed there; at one point, 
+     over five million documents were produced per day, including half the
+      securities traded on the New York Stock Exchange. Although the plant 
+      printed currency for many countries around the world, it was best known 
+      for producing Latin American banknotes, which led to it being the target of a 
+      FALN terrorist bombing in 1977. The facility was used by American Bank Note 
+      until about 1984, after which it was sold, redeveloped as commercial space,
+       subdivided, and designated a New York City landmark. 
+    Major tenants include a charter school and the New York City
+
+</div>
+
+<form action="" >
+    <input type="text" id="val" >changed
+</form>
+</body>
+
+<!-- Download file jQuery -->
+<script src="js/jquery-3.7.1.min.js"></script>
+
+<!-- directly using uncompressed file thorugh online -->
+<!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> -->
+<script src="js/myjQuery.js"></script>
+
+<script>
+    $('.dbl').dblclick(function(){
+        console.log("Double click is working here",this);
+    });
+
+
+    $('.hove').hover(function(){
+        console.log("checking hover is working here",this);
+    },function(){
+        console.log("Thanks for coming",this);
+
+    });
+
+
+</script>
+</html>
